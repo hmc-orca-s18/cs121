@@ -3,11 +3,17 @@ from app import app
 import os
 from werkzeug import secure_filename
 from app import predictor 
+from PIL import Image
 
+#Takes in filename and uploads the file to the static directory
 @app.route('/<filename>')
 def get_file(filename):
-    return send_from_directory('static',filename)
+    return send_from_directory('static/img', filename)
 
+#This runs when a Get or POST request is sent to our website at
+#the / endpoint
+#renders our displayResult.html file if a POST request is sent with
+#an image of type jpg,jpeg, or png, else renders index.html
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
@@ -28,6 +34,11 @@ def upload_file():
             pred_class=predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
+
+#when requests are sent to the /about endpoint this renders displayFile.html
+@app.route('/about')
+def about():
+    return render_template('displayFile.html')
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
