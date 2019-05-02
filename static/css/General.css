@@ -6,24 +6,19 @@ body {
 }
 
 button {
-	color: white;
-        background-color: darkgrey;
+background-color: white; 
+color: black; 
+border: 2px solid #ff69b4;
+}
+
+button:hover {
+	background-color: #e842f4;
 }
 
 #logo {
 	margin-top: 30px; 
 	align-content: center;
 	width: 500px; 
-}
-
-#listenButton {
-	color: white;
-	background-color: rgb(255, 5, 201); 
-}
-
-#aboutButton {
-	color: white;
-	background-color: rgb(4, 223, 51); 
 }
 
 #aboutTitle {
@@ -43,15 +38,16 @@ button {
 
 #moodPredSentence, #fileDisplay {
 	display: flex;
+	padding: 0px;
+	margin: 0px;
 }
 
-#pred {
+#pred, #finalMood {
 	text-shadow: 2px 2px 5px cyan;
 }
 
-#startOver1, #startOver2, #startOver3, #startOver4 {
-	color: white;
-	background-color: darkgrey;
+#finalGenre {
+	text-shadow: 2px 2px 5px orange;
 }
 
 header { 
@@ -59,35 +55,32 @@ header {
 	align-items: center;
 }
 
-#PageOne, #PageTwo {
-	background-color:  rgb(97, 97, 97);
+#cardOne, #cardTwo {
+	background-color:  rgb(54, 54, 54);
 	background-image: linear-gradient(to right, gray , darkgray);
 	margin-left: 100px; 
 	margin-right: 150px;
 	padding: 25px;
 	box-shadow: 10px 10px 5px white;
-        border-radius: 5px;
-
+	border-radius: 5px;
 }
- 
-#PageThree, #PageFour, #PageFive {
-        background-color:  rgb(97, 97, 97);
+
+#cardThree, #cardFour {
+	background-color:  rgb(54, 54, 54);
 	background-image: linear-gradient(to right, gray , darkgray);
-        margin-left: 100px; 
-        margin-right: 150px;
-        padding: 25px;
+	margin-left: 100px; 
+	margin-right: 150px;
+	padding: 25px;
 	box-shadow: 10px 10px 5px white;
 	visibility: hidden;
 	border-radius: 5px;
 }
 
-
 .resp-container {
-    position: relative;
-    overflow: hidden; 
-    height: 600px;
+position: relative;
+overflow: hidden; 
+height: 600px;
 }
-
 
 .resp-iframe {
     top: 0;
