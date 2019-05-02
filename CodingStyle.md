@@ -1,4 +1,4 @@
-#Coding Style Document
+# Coding Style Document
 
 
 We used four different languages for our web application. First, we used python in a
@@ -7,7 +7,7 @@ front-end functionality, and access the Spotify API. In order to integrate our m
 into the Web App we used python, and finally, we used HTML/CSS for the
 visible aspects of our interface. Below, we will go through how we named our variables 
 and functions, comments, whitespaces, indentation, capitalization, and characters per 
-line for each of these different languages.
+line for each of these different languages. This document goes through our coding style for each language. While we worked to adhere to these guidelines, we permitted ourselves to break them if it impaired our ability to implement a part of code.
 
 
 Python
