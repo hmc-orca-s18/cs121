@@ -1,3 +1,5 @@
+/* ALL PAGES CSS */
+
 body {
 	background-color: black;
 	color: white;
@@ -5,56 +7,47 @@ body {
 	font-size: 20px; 
 }
 
+/* All buttons are formatted the same. */
 button {
 	background-color: white; 
 	color: black; 
-	border: 2px solid #ff69b4;
+	border: 2px solid #ff5100;
 }
 
+/* All buttons are turn pink when mouse hovers over them. */
 button:hover {
 	background-color: #e842f4;
 }
 
+/*Music by Mood png at top of page */
 #logo {
 	margin-top: 30px; 
 	align-content: center;
 	width: 500px; 
 }
 
-#aboutTitle {
-	align-self: left;
-	padding-left: 30px;
-	font-size: 30px;
-}
 
-#aboutPage {
-	text-align: left;
-	padding-left: 30px;
-}
 
-#group_selfie {
-	 transform: rotate(180deg);
-}
+/* LISTEN PAGE CSS */
 
+/* Styles variable spacing in cardOne */
 #moodPredSentence, #fileDisplay {
 	display: flex;
 	padding: 0px;
 	margin: 0px;
 }
 
+/* Styles "mood" to have blue colored shadow in each occurance */
 #pred, #finalMood {
 	text-shadow: 2px 2px 5px cyan;
 }
 
+/* Styles "genre" to have orange colored shadow in each occurance */
 #finalGenre {
 	text-shadow: 2px 2px 5px orange;
 }
 
-header { 
-	text-align: center;
-	align-items: center;
-}
-
+/* Styles for cardOne/cardTwo which are visible at page load. */
 #cardOne, #cardTwo {
 	background-color:  rgb(54, 54, 54);
 	background-image: linear-gradient(to right, gray , darkgray);
@@ -65,6 +58,7 @@ header {
 	border-radius: 5px;
 }
 
+/* Styles for cardThree/cardFour which become visible. */
 #cardThree, #cardFour {
 	background-color:  rgb(54, 54, 54);
 	background-image: linear-gradient(to right, gray , darkgray);
@@ -76,15 +70,40 @@ header {
 	border-radius: 5px;
 }
 
+/* Styles for iFrame that contains the spotify API call -> displays playlist. */
 .resp-container {
 	position: relative;
 	overflow: hidden; 
 	height: 600px;
 }
 
+/* Styles for iFrame that contains the spotify API call -> displays playlist. */
 .resp-iframe {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+
+
+/* ABOUT PAGE CSS */
+
+/* Title */
+#aboutTitle {
+	align-self: left;
+	padding-left: 30px;
+	font-size: 30px;
+}
+
+/* General Formatting for the about page */
+#aboutPage {
+	text-align: left;
+	padding-left: 30px;
+}
+
+/* Team selfie styling */
+#group_selfie {
+	 transform: rotate(180deg);
 }
