@@ -1,6 +1,5 @@
 # Music By Mood
-
-# Link to application
+Link to application
 http://ec2-54-183-142-216.us-west-1.compute.amazonaws.com/
 
 # Description
