@@ -24,13 +24,6 @@ def model_predict(img_path, model_path):
     """
     learn = load_model(model_path)
     img = open_image(img_path, convert_mode='L')
-    width, height = img.size
-    # crop our photo to have even height and width based on original
-    if width < height:
-        img = img.crop((0,0,width,width))
-    elif width > height:
-        img = img.crop(((width-height)/2, 0, height + (width-height)/2, height))
-    # resize to 48 x 48
     img = img.resize((0,48,48))
     pred_class,pred_idx,outputs = learn.predict(img)
     return pred_class
