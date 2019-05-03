@@ -1,6 +1,11 @@
 # Music By Mood
 
-Link to application: http://ec2-54-183-142-216.us-west-1.compute.amazonaws.com/
+# Link to application
+http://ec2-54-183-142-216.us-west-1.compute.amazonaws.com/
 
-Our Web Application will recommend Spotify playlists for users based on their mood. The application will allow the user to upload a selfie and then using that image, a Machine Learning Model will categorize each face based on the emotion shown in the facial expression in to one of four categories (Angry, Happy, Sad, Surprised). Once the emotion is determined, the application will use the Spotify API to recommend music playlists to match that mood.
+# Description
+Music by Mood is a Web Application that takes a selfie and using our Emotional Recognition System (ERS), will determine your mood. From there, users can select a genre and whether they want to change or keep their current mood and our Web Application will give a Spotify playlist that perfectly fits your selections!
+
+# Collaborators
+Music by Mood was created by Quinn Hirsohn, Sally Carlson, Jeremy Jess, Justin Gadalla, and Kira Weiss. It was made for Software Development (CS121) class at Harvey Mudd College.
 
